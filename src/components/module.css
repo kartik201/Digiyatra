@@ -1,0 +1,306 @@
+.flight-module {
+  display: flex;
+  height: 120vh;
+  border-radius: 20px;
+  padding: 10px, 10px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px, 10px;
+  margin-top: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li.active {
+  background-color: #ff8ba4;
+  color: #fff;
+}
+
+.sidebar li:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Main content styling */
+.main-content {
+  flex-grow: 1;
+  background-image: url("https://i0.wp.com/allpicts.in/wp-content/uploads/2016/03/Airplane-Images-with-Beautiful-Picture-of-Flight-in-Sunset.jpg?w=2280&ssl=1");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  padding-top: 100px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  width: 60%;
+  margin-top: 50px; /* Adjust vertical spacing above the search bar */
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #c8bcbc;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.icon {
+  color: #ff0000;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f06292;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #ec407a;
+}
+
+.input-wrapper {
+  position: relative;
+  color: #000;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  padding: 10px;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.airport-code {
+  font-weight: bold;
+  color: #000;
+}
+
+.airport-name {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.flight-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flight-logo {
+  width: 80px;
+  height: auto;
+}
+
+.flight-details {
+  flex: 2;
+  text-align: center;
+  color: #000;
+}
+
+.time,
+.route {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+
+.price {
+  text-align: right;
+  color: #000;
+  font-weight: bold;
+}
+
+.select-button {
+  background-color: #f06292;
+  color: #fff;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.select-button:hover {
+  background-color: #ec407a;
+}
+
+.passenger-details {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.passenger-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.passenger-input {
+  margin-bottom: 20px;
+}
+
+.passenger-input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.passenger-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.webcam-section {
+  margin-top: 20px;
+}
+
+.webcam-section label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-icon {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+}
+
+.gif {
+  height: 150px;
+  width: 70%;
+  border: #000;
+  border-radius: 5px;
+  margin-left: 50px;
+  padding: 10px 10px;
+}
+
+.webcam-preview {
+  width: 100%;
+  height: 150px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.webcam-preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.webcam-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3babc7;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 90px;
+}
+
+.webcam-button:hover {
+  background-color: #4592a0;
+}
